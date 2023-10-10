@@ -1,0 +1,71 @@
+.about {
+  width: 100vw;
+  height: 84vh;
+  overflow-y: auto;
+}
+.about img {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+}
+.about .desc {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 0.7rem;
+}
+.about h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.about p {
+  font-size: 1.1rem;
+}
+.about .vansLink {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  background-color: #ffcc8d;
+  border-radius: 5px;
+}
+.vansLink button {
+  background-color: #161616;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+.vansLink button:hover {
+  transform: scale(1.1);
+}
+.vansLink button a {
+  color: #fff;
+}
+@media (min-width: 768px) {
+  .footer{
+    height: 6vh;
+  }
+  .about img{
+    height: 50%;
+  }
+  .about .desc {
+    padding: .8rem 4rem;
+    font-size: 0.7rem;
+  }
+  .desc h2 {
+    letter-spacing: 1px;
+    font-size: 2.3rem;
+    font-weight: 700;
+  }
+  .about p {
+    font-size: 1.3rem;
+  }
+  .desc .vansLink {
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
