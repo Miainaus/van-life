@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 import Vans from "./pages/Vans/Vans";
 
 function App() {
-  // const [data, setData] = React.useState(null);
+  // // const [data, setData] = React.useState(null);
   // React.useEffect(() => {
   //   fetch("http://localhost:3001/api")
   //     .then((res) => res.json())
