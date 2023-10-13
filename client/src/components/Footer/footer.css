@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+  color: #b9b4c7;
+  background-color: #352f44;
+  position: sticky;
+  bottom: 0;
+}
+@media (min-width: 768px) {
+  .footer{
+    font-size: 1rem;
+  }
+}

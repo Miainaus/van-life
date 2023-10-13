@@ -1,0 +1,45 @@
+.card {
+  width: 230px;
+  height: 350px;
+}
+.card a {
+  color: black;
+}
+.card img{
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+.card img:hover{
+transform: scale(1.1);
+}
+.card .info:hover {
+  transform: scale(1.1);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+padding: 1rem 0;
+}
+.info .desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.desc .title{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.desc .price {
+  font-size: 1.1rem;
+}
+.tag{
+  width: 86px;
+  height: 33px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}

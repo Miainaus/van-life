@@ -1,0 +1,66 @@
+.vans {
+  padding: 4rem ;
+  height: fit-content;
+  overflow-y: hidden;
+}
+.simple{
+  background-color: #E17654;
+  color: #FFEAD0;
+}
+.rugged{
+  background-color: #005B41;
+  color: #FFEAD0;
+}
+.luxury{
+  background-color: black;
+  color: #FFEAD0;
+}
+.vans h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
+.vans .filters{
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.vans button{
+  border: none;
+  border-radius: 5px;
+  width: 20vw;
+  max-width: 100px;
+  height: 37px;
+  cursor: pointer;
+}
+.vans button:hover{
+  transform: scale(1.1);
+  opacity: .9;
+}
+.vans .clear {
+  justify-self: end;
+  width: 20vw;
+  height: 37px;
+  display: flex;
+  align-items: flex-end;
+  color: #4D4D4D;
+  font-size: 1rem;
+  padding-bottom:2px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.vans .clear:hover{
+  color: black;
+}
+.lists {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: space-between;
+}
+.lists::after {
+  content: "";
+  width: calc(100%/2 - 2.4rem); 
+  }

@@ -2,35 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Layout from "./components/Layout";
+import Host from "./pages/Host/Host";
 import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
-import Vans from "./pages/Vans/Vans";
+import Vans from "./pages/ListPage/Vans";
+import Product from "./pages/Product/Product";
+import "./server.js";
 
 function App() {
-  // // const [data, setData] = React.useState(null);
-  // React.useEffect(() => {
-  //   fetch("http://localhost:3001/api")
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
-
   return (
     <BrowserRouter>
-      <div>
-        <nav className='header'>
-          <h2>#VANLIFE</h2>
-          <div className='links'>
-            <Link to='/about'>About</Link>
-            <Link to='/vans'>Vans</Link>
-          </div>
-        </nav>
-        <Routes>
+      <Routes>
+        <Route element={<Layout />}>
           <Route path='/' element={<Home />}></Route>
+          <Route path='/host' element={<Host />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/vans' element={<Vans />}></Route>
-        </Routes>
-        <div className='footer'>© 2023 #VANLIFE ❤️</div>
-      </div>
+          <Route path='/vans/:id' element={<Product />}></Route>
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
