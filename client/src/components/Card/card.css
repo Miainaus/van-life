@@ -12,9 +12,11 @@
 }
 .card img:hover{
 transform: scale(1.1);
+transition: transform .3s ease-in-out;
 }
 .card .info:hover {
   transform: scale(1.1);
+  transition: transform .3s ease-in-out;
 }
 .info {
   display: flex;

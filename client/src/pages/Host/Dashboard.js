@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
+import "./host.css";
 
-const Dashboard = () => {
+
+const Host = () => {
   return (
-    <div>
-      
+    <div className='host'>
+      Dashboard
     </div>
   );
-}
+};
 
-export default Dashboard;
+export default Host;
